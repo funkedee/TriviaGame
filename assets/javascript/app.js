@@ -41,12 +41,12 @@ $(document).ready(function () {
             answersList: "<ul><li>Celine Dion</li><li>Paul McCartney</li><li>Madonna</li><li class= 'correct_answer'>Alanis Morissette</li></ul>",
             gif: "<img src= 'assets/images/alanis.webp' alt= 'alanis gif'></img>",
         }, {
-            question: "In what year was the band, R.E.M., inducted to the Rock and Roll Hall of Fame?",
+            question: "When was the band, R.E.M., inducted to the Rock and Roll Hall of Fame?",
             correctAnswer: "2007",
             answersList: "<ul><li>1999</li><li>2015</li><li class= 'correct_answer'>2007</li><li>1995</li></ul>",
             gif: "<img src= 'assets/images/r.e.m..webp' alt= 'r.e.m. gif'></img>",
         }, {
-            question: "The Wu-Tang Clan formed in Staten Island, New York in 1991 with how many original members?",
+            question: "The Wu-Tang Clan formed in 1991 with how many original members?",
             correctAnswer: "9",
             answersList: "<ul><li class= 'correct_answer'>9</li><li>5</li><li>3</li><li>12</li></ul>",
             gif: "<img src= 'assets/images/wu-tang.webp' alt= 'wu-tang gif'></img>",
@@ -138,7 +138,7 @@ $(document).ready(function () {
             // display result and gif
             $("#game").append("<div class= 'result'>Correct!</div>");
             $("#game").append(triviaGame.questionArray[triviaGame.questionNumber].gif);
-
+            $(".result").css({"font-size":"35px", "margin-top":"17px", "margin-bottom":"9px"});
             // set response timer for 5 seconds
             var responseTimer = setTimeout(function () {
                 triviaGame.play();
