@@ -169,7 +169,7 @@ $(document).ready(function () {
             $("#game").empty()
 
             // display results
-            $("#game").append("<div id= 'results'><h2> All done! Here's how you did:</h2><br>correct: " + triviaGame.correct + "<br>Incorrect: " + triviaGame.incorrect + "<br>Unanswered: " + triviaGame.unanswered + "</div>");
+            $("#game").append("<div id= 'results-text'><h2> All done! Here's how you did:</h2></div><div id='results'><p>correct: " + triviaGame.correct + "</p><p>Incorrect: " + triviaGame.incorrect + "</p><p>Unanswered: " + triviaGame.unanswered + "</p></div>");
 
             // make start over
             $("#game").append("<div id=start-over><h2>Start over ?</h2></div>");
